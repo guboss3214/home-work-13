@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle{
+    animation: changeColorCircle 2s ease-in-out infinite;
+}
+
+.upright{
+    animation: changeColorUpright 2s ease-in-out infinite;
+}
+
+.square{
+    animation: changeColorSquare 2s ease-in-out infinite;
+}
+
+.ellipse{
+    animation: changeColorEllipse 2s ease-in-out infinite;
+}
+
+@keyframes changeColorCircle{
+    0%{
+        fill: red;
+        stroke: green;
+    }
+    50%{
+        fill: blue;
+        stroke: green;
+    }
+    100%{
+        fill: green;
+        stroke: red;
+    }
+}
+
+@keyframes changeColorUpright{
+    0%{
+        fill: green;
+        stroke: red;
+    }
+    50%{
+        fill: red;
+        stroke: green;
+    }
+    100%{
+        fill: blue;
+        stroke: blue;
+    }
+}
+
+@keyframes changeColorSquare{
+    0%{
+        fill: lightblue;
+        stroke: purple;
+    }
+    50%{
+        fill: purple;
+        stroke: lightblue;
+    }
+    100%{
+        fill: greenyellow;
+        stroke: goldenrod;
+    }
+}
+
+@keyframes changeColorEllipse{
+    0%{
+        fill: rebeccapurple;
+        stroke: yellowgreen;
+    }
+    50%{
+        fill: fuchsia;
+        stroke: hotpink;
+    }
+    100%{
+        fill: maroon;
+        stroke: mediumslateblue;
+    }
+}
+
